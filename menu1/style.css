@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: rgba(0, 195, 255, 0.555);
+
+    
+}
+
+.box {
+    height: 200px;
+}
+.box header nav ul  li a{
+    text-decoration: none;
+    position: relative;
+
+}
+.box header nav ul  li{
+    list-style: none;
+}
+.box header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+.box header nav ul  li a ul{
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+.box header nav ul  li a ul{
+    position: absolute;
+    transform: translate(-50%);
+    
+}
+.box header nav ul  li a ul li{
+    border-top: 1px solid;
+}
+.box header nav ul li a:hover > ul{
+    /* display: inline; */
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%);
+
+}
